@@ -1,0 +1,279 @@
+/* asi se comenta en ccs */
+
+/* en ccs se habla de selectores no de etiqteas
+selector {
+    propiedad:valor;
+    }
+*/
+
+/*
+no se recomineda usar mas de 2 fuentes en todo el proyecto 
+ */
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville:ital@0;1&family=Ms+Madi&family=Roboto:ital,wght@1,100&display=swap');
+
+/*reseteo de propiedades*/
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    list-style-type: none;
+    color: black;
+}
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    gap: 2px;
+    display: grid;
+    align-content: stretch;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+.mainNav {
+    grid-area: mainNav;
+}
+
+.signNav {
+    grid-area: signNav;
+}
+
+.slogan {
+    grid-area: slogan;
+}
+
+.secondNav {
+    grid-area: secondNav;
+}
+
+header {
+    z-index:2;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid white;
+    background-image: url('../img/headerBackground.JPG');
+    background-size: cover;
+    background-position: right;
+    height: fit-content;
+    background-repeat: none;
+    font-size: 2.5vw;
+    display: grid;
+    grid-template-areas:
+        "mainNav mainNav signNav"
+        "slogan  slogan slogan"
+        "secondNav secondNav secondNav";
+}
+
+.slogan {
+    color: white;
+    font-family: 'Ms Madi', cursive;
+    margin-left: 40px;
+    font-size: 6.5vw;
+}
+h1 {
+    color: white;
+    font-family: 'Ms Madi', cursive;
+    font-size: 6.5vw;
+    font-size: 5vw;
+    color: white;
+    margin: 5px 10px 5px 10px;
+}
+.rowNav {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.columnNav {
+   margin: 5px;
+}
+
+.signNav .rowNav{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.signNav .rowNav .columnNav{ 
+    margin: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    transition: 1.5s;
+    border-bottom: 2.5px solid transparent;
+    height: fit-content;
+}
+
+header a:hover {
+    border-color: rgb(238, 89, 230);
+}
+.photoCategories{
+    z-index: 1;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.photoCategories img {
+    width: 19vw;
+    height: 30vw;    
+}
+
+.photoCategories img:hover {
+    opacity: 0.8;
+}
+
+#aImg6 {
+    display: none;
+}
+#aImg12 {
+    display: none;
+}
+.content {
+    padding: 5px;
+    margin: 2px;
+    background-color: gray;
+}
+h2 {
+    font-family: 'Ms Madi', cursive;
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+h2 a {
+    font-size: 3vw;
+    font-family: 'Ms Madi', cursive;
+    text-decoration: none;
+    color: white;
+}
+h3 {
+    font-size: 1.5vw;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+footer {
+    margin: 2px;
+    padding: 5px;
+    border: solid 1px;
+    font-weight: bold;
+}
+footer .footerParagraph1 {
+     font-size: 3vw;
+}
+footer p {
+    font-size: 1.5vw;
+}
+
+footer img {
+    width: 5vw;
+    height: 5vw;  
+}
+
+@media (min-width:500px){
+
+    .photoCategories img {
+        width: 16vw;
+        height: 25vw;    
+    }
+
+    #aImg6 {
+        display: unset;
+    }
+
+    #aImg12 {
+        display: unset;
+    }
+}
+/*
+main a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+body div p {
+    margin: 5px 40px 20px 10px;
+    border: 1px solid;
+    height: 60px;
+    padding: 10px;
+}
+
+main {
+    border: 1px solid;
+    margin: 20px 40px 20px 40px;
+}
+
+main h1 {
+    border: 1px solid;
+    margin: 10px 10px 5px 10px;
+    padding: 10px;
+}
+
+main h2 {
+    margin: 10px 10px 5px 10px;
+}
+
+main div p {
+    vertical-align: middle;
+    margin: 10px 10px 5px 10px;
+}
+
+form {
+    margin: 10px 10px 5px 10px;
+    padding: 10px ;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+form fieldset div input {
+    margin-bottom: 20px;
+}
+
+form fieldset {
+    border: 0px;
+    font-weight: bold;
+}
+
+footer {
+    border: 1px solid;
+    margin: 20px 40px 20px 40px;
+}
+
+footer p { 
+    border: 0px;
+    font-weight: bold;
+    font-size: large;
+    margin: 10px 10px 10px 10px;
+}
+
+footer .footerParagraph1 { 
+    border: 0px;
+    font-size: x-large;
+}
+
+.footerIcon{
+    margin: 5px 10px 5px 10px;
+}
+*/
