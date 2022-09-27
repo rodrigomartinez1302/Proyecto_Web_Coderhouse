@@ -23,11 +23,13 @@ html {
     font-family: 'Libre Baskerville', serif;
     list-style-type: none;
     color: black;
+    text-decoration: none;
 }
 
 header {
     grid-area: header;
 }
+
 main {
     grid-area: main;
 }
@@ -41,10 +43,11 @@ body {
     display: grid;
     align-content: stretch;
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+        "header"
+        "main"
+        "footer";
 }
+
 .mainNav {
     grid-area: mainNav;
 }
@@ -62,7 +65,7 @@ body {
 }
 
 header {
-    z-index:2;
+    z-index: 2;
     position: sticky;
     top: 0;
     border-bottom: 3px solid white;
@@ -71,7 +74,7 @@ header {
     background-position: right;
     height: fit-content;
     background-repeat: none;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     display: grid;
     grid-template-areas:
         "mainNav mainNav signNav"
@@ -85,35 +88,34 @@ header {
     margin-left: 40px;
     font-size: 6.5vw;
 }
-h1 {
-    color: white;
-    font-family: 'Ms Madi', cursive;
-    font-size: 6.5vw;
-    font-size: 5vw;
-    color: white;
-    margin: 5px 10px 5px 10px;
-}
+
 .rowNav {
-    margin: 10px;
+    padding: 2px;
+    margin: 10px 3px 3x 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .columnNav {
-   margin: 5px;
+    margin: 5px;
 }
 
-.signNav .rowNav{
-    margin: 10px;
+.signNav .rowNav {
+    margin: 10px 3px 3x 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-.signNav .rowNav .columnNav{ 
-    margin: 10px;
+
+.secondNav .rowNav {
+    margin: 10px 3px 3x 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -127,17 +129,21 @@ header a {
 header a:hover {
     border-color: rgb(238, 89, 230);
 }
-.photoCategories{
+
+.photoCategories {
     z-index: 1;
-    margin: 2px;
+    margin-bottom: 50px;
+    margin: 50px 2px 50px 2px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-around;
+    background-color: lightgrey;
 }
+
 .photoCategories img {
-    width: 19vw;
-    height: 30vw;    
+    width: 23vw;
+    height: 36vw;
 }
 
 .photoCategories img:hover {
@@ -147,56 +153,115 @@ header a:hover {
 #aImg6 {
     display: none;
 }
+
 #aImg12 {
     display: none;
 }
+
+#aImg5 {
+    display: none;
+}
+
+#aImg11 {
+    display: none;
+}
+
 .content {
     padding: 5px;
-    margin: 2px;
-    background-color: gray;
+    background-color: lightgrey;
+    margin: 50px 2px 50px 2px;
 }
+.content p{
+    margin-bottom: 10px;
+    margin: 10px 3px 3x 10px;
+}
+
 h2 {
     font-family: 'Ms Madi', cursive;
     font-size: 3vw;
-    color: white;
+    color: black;
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
 h2 a {
     font-size: 3vw;
     font-family: 'Ms Madi', cursive;
     text-decoration: none;
-    color: white;
+    color: black;
 }
+
 h3 {
     font-size: 1.5vw;
-    color: white;
+    color: black;
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
 footer {
+ 
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(25,74,7,0.8) 49%, rgba(0,0,0,0.5) 100%);
     margin: 2px;
     padding: 5px;
-    border: solid 1px;
-    font-weight: bold;
 }
+
 footer .footerParagraph1 {
-     font-size: 3vw;
-}
-footer p {
     font-size: 1.5vw;
+}
+
+footer p {
+    font-size: 1vw;
 }
 
 footer img {
     width: 5vw;
-    height: 5vw;  
+    height: 5vw;
 }
 
-@media (min-width:500px){
+.text-center {
+    height: 100vh;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+}
+
+.form-signin .sigIn {
+    font-family: 'Ms Madi', cursive;
+    font-size: 80px;
+}
+
+.signButtons {
+    display: flex;
+    gap: 4px;
+}
+
+.form-signin .checkbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.portfolioForm{
+    margin: 50px 2px 50px 2px;
+}
+
+@media (min-width:500px) {
+    header {
+        font-size: 2.3vw;
+    }
+    .columnNav {
+        margin: 17px;
+    }
 
     .photoCategories img {
         width: 16vw;
-        height: 25vw;    
+        height: 24vw;
     }
 
     #aImg6 {
@@ -206,74 +271,12 @@ footer img {
     #aImg12 {
         display: unset;
     }
-}
-/*
-main a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-body div p {
-    margin: 5px 40px 20px 10px;
-    border: 1px solid;
-    height: 60px;
-    padding: 10px;
-}
 
-main {
-    border: 1px solid;
-    margin: 20px 40px 20px 40px;
-}
+    #aImg5 {
+        display: unset;
+    }
 
-main h1 {
-    border: 1px solid;
-    margin: 10px 10px 5px 10px;
-    padding: 10px;
+    #aImg11 {
+        display: unset;
+    }
 }
-
-main h2 {
-    margin: 10px 10px 5px 10px;
-}
-
-main div p {
-    vertical-align: middle;
-    margin: 10px 10px 5px 10px;
-}
-
-form {
-    margin: 10px 10px 5px 10px;
-    padding: 10px ;
-    border: 1px solid;
-    font-weight: bold;
-}
-
-form fieldset div input {
-    margin-bottom: 20px;
-}
-
-form fieldset {
-    border: 0px;
-    font-weight: bold;
-}
-
-footer {
-    border: 1px solid;
-    margin: 20px 40px 20px 40px;
-}
-
-footer p { 
-    border: 0px;
-    font-weight: bold;
-    font-size: large;
-    margin: 10px 10px 10px 10px;
-}
-
-footer .footerParagraph1 { 
-    border: 0px;
-    font-size: x-large;
-}
-
-.footerIcon{
-    margin: 5px 10px 5px 10px;
-}
-*/

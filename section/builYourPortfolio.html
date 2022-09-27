@@ -8,33 +8,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<header>
+    <nav class="mainNav">
+        <ul class="rowNav">
+            <li class="columnNav">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Stock Photos</a>
+            </li>
+            <li class="columnNav">
+                <a href="../section/photographers.html">Photographers</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Pricing</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="signNav">
+        <ul class="rowNav">
+            <li class="columnNav">
+                <a href="../section/signIn.html">Sig In</a>
+            </li>
+            <li class="columnNav">
+                <a href="../section/signUp.html">Sig Up</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="slogan">Earn for your shoots</h1>
+    <div class="secondNav">
+        <ul class="rowNav">
+            <li class="columnNav">
+                <a href="">Sports</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Nature</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Portrait</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Macro</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Food</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Plants</a>
+            </li>
+            <li class="columnNav">
+                <a href="">Sky</a>
+            </li>
+        </ul>
+    </div>
+</header>
 
 <body>
     <main>
-        <h1>Build your Portfolio</h1>
-        <form>
-            <label for="">Date</label><br>
-            <input type="date"><br><br>
-            <label for="">Description</label><br>
-            <textarea rows="4" cols="50">Enter a small description</textarea><br><br>
-            <label for="">Category</label><br>
-            <select id="category">
-                <option value="volvo">Sports</option>
-                <option value="saab">Nature</option>
-                <option value="opel">Portrait</option>
-                <option value="audi">Macro</option>
-                <option value="audi">Food</option>
-                <option value="audi">Plants</option>
-                <option value="audi">Sky</option>
-            </select><br><br>
-            <label for="files">Choose Files</label><br>
-            <input type="file" id="files" name="files" multiple><br><br>
+        <section class="portfolioForm">
+            <h1>Build your Portfolio</h1>
+            <form>
+                <label for="">Date</label><br>
+                <input type="date"><br><br>
+                <label for="">Description</label><br>
+                <textarea rows="4" cols="50">Enter a small description</textarea><br><br>
+                <label for="">Category</label><br>
+                <select id="category">
+                    <option value="volvo">Sports</option>
+                    <option value="saab">Nature</option>
+                    <option value="opel">Portrait</option>
+                    <option value="audi">Macro</option>
+                    <option value="audi">Food</option>
+                    <option value="audi">Plants</option>
+                    <option value="audi">Sky</option>
+                </select><br><br>
+                <label for="files">Choose Files</label><br>
+                <input type="file" id="files" name="files" multiple><br><br>
 
-            <input type="submit">
-            <input type="reset" value="Reset">
-            <button type="button" class="cancelbtn"><a href="../index.html"> Cancel </a></button><br>
-        </form>
+                <input type="submit">
+                <input type="reset" value="Reset">
+                <button type="button" class="cancelbtn"><a href="../index.html"> Cancel </a></button><br>
+            </form>
+        </section>
     </main>
+    <footer>
+        <!-- p= paragraph -->
+        <p class="footerParagraph1">Let's be Friends</p>
+        <a href=""><img class="footerIcon" src="../img/facebook.svg"></a>
+        <a href=""><img class="footerIcon" src="../img/instagram.svg"></a>
+        <a href=""></a><img class="footerIcon" src="../img/twitter.svg"></a>
+        <p>All rights reserved</p>
+    </footer>
 </body>
 
 </html>

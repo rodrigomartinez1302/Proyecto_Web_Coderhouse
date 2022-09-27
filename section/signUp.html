@@ -5,35 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 
-<body>
-    <main>
-        <h1>Sign Up</h1>
+<body class="text-center">
+    <main class="form-signin">
         <form>
-            <fieldset>
-                <label for="">Complete Name</label><br>
-                <input type="text" placeholder="Enter Name"><br><br>
-                <label for="">Email</label><br>
-                <input type="email" placeholder="Enter Email"><br><br>
-                <label for="">Birthday</label><br>
-                <input type="date"><br><br>
-                <label for="psw">Password</label><br>
-                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-                <label for="psw-repeat">Repeat Password</label><br>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
-                <p>By creating an account you agree to
-                    <a href="#">Terms & Privacy</a>.
-                </p>
-                <input type="submit" value="Sign Up">
-                <input type="reset" value="Reset">
-                <button type="button" class="cancelbtn"><a href="../index.html"> Cancel </a></button><br>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </fieldset>
+            <img class="mb-4 border border-5 border-success" src="../img/logo.png" alt="Logo" width="170" height="150">
+            <h1 class="sigIn display-1">Sign Up</h1>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="yourEmail@example.com">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control mt-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control mt-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Re-enter password</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I am +18 years old</label>
+              </div>
+            <section class="signButtons">
+                <button class="w-100 btn btn-lg btn-success submit" type="submit">Sign Up</button>
+                <a href="../index.html" class="w-100 btn btn-lg btn-success cancel" type="button">Cancel</a>
+            </section>
         </form>
     </main>
+    <footer>
+        <!-- p= paragraph -->
+        <p class="footerParagraph1">Let's be Friends</p>
+        <a href=""><img class="footerIcon" src="../img/facebook.svg"></a>
+        <a href=""><img class="footerIcon" src="../img/instagram.svg"></a>
+        <a href=""></a><img class="footerIcon" src="../img/twitter.svg"></a>
+        <p>All rights reserved</p>
+    </footer>
+    <!-- scripts de BTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
