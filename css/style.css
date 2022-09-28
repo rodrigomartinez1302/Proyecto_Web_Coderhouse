@@ -91,7 +91,7 @@ header {
 
 .rowNav {
     padding: 2px;
-    margin: 10px 3px 3x 10px;
+    margin: 10px 3px 3px 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -128,12 +128,12 @@ header a {
 
 header a:hover {
     border-color: rgb(238, 89, 230);
+    text-decoration: none;
 }
 
 .photoCategories {
     z-index: 1;
-    margin-bottom: 50px;
-    margin: 50px 2px 50px 2px;
+    margin: 5px 2px 5px 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -169,10 +169,10 @@ header a:hover {
 .content {
     padding: 5px;
     background-color: lightgrey;
-    margin: 50px 2px 50px 2px;
+    margin: 5px 0px 5px 0px;
 }
-.content p{
-    margin-bottom: 10px;
+
+.content p {
     margin: 10px 3px 3x 10px;
 }
 
@@ -189,6 +189,13 @@ h2 a {
     font-family: 'Ms Madi', cursive;
     text-decoration: none;
     color: black;
+    transition: 1.5s;
+    border-bottom: 2.5px solid green;
+}
+
+.content h2 a:hover {
+    border-color: rgb(238, 89, 230);
+    text-decoration: none;
 }
 
 h3 {
@@ -199,9 +206,9 @@ h3 {
 }
 
 footer {
- 
-    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(25,74,7,0.8) 49%, rgba(0,0,0,0.5) 100%);
-    margin: 2px;
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(25, 74, 7, 0.8) 49%, rgba(0, 0, 0, 0.5) 100%);
+    margin-top: 2px;
     padding: 5px;
 }
 
@@ -247,14 +254,21 @@ footer img {
     font-size: 12px;
 }
 
-.portfolioForm{
-    margin: 50px 2px 50px 2px;
+.portfolio {
+    margin: 5px 0px 5px 0px;
+    background-color: lightgrey;
+
+}
+
+.portfolioForm {
+    margin: 10px;
 }
 
 @media (min-width:500px) {
     header {
         font-size: 2.3vw;
     }
+
     .columnNav {
         margin: 17px;
     }
