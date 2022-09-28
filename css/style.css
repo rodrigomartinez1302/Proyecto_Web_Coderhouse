@@ -91,7 +91,7 @@ header {
 
 .rowNav {
     padding: 2px;
-    margin: 10px 3px 3px 10px;
+    margin: 10px 3px 10px 3px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -103,7 +103,7 @@ header {
 }
 
 .signNav .rowNav {
-    margin: 10px 3px 3x 10px;
+    margin: 10px 3px 10px 3px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -111,7 +111,7 @@ header {
 }
 
 .secondNav .rowNav {
-    margin: 10px 3px 3x 10px;
+    margin: 10px 3px 10px 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -173,7 +173,7 @@ header a:hover {
 }
 
 .content p {
-    margin: 10px 3px 3x 10px;
+    margin: 10px 3px 10px 3px;
 }
 
 h2 {
