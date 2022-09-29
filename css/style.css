@@ -90,7 +90,7 @@ header {
 }
 
 .rowNav {
-    padding: 2px;
+    padding: 1.8px;
     margin: 10px 3px 10px 3px;
     display: flex;
     flex-direction: row;
@@ -99,7 +99,7 @@ header {
 }
 
 .columnNav {
-    margin: 5px;
+    margin: 4px;
 }
 
 .signNav .rowNav {
