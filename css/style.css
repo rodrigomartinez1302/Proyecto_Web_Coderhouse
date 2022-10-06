@@ -71,7 +71,7 @@ header {
   height: -moz-fit-content;
   height: fit-content;
   background-repeat: none;
-  font-size: 2.8vw;
+  font-size: 2.9vw;
   display: grid;
   grid-template-areas: "mainNav mainNav signNav" "slogan  slogan slogan" "secondNav secondNav secondNav";
 }
@@ -161,7 +161,7 @@ header a:hover {
 
 h2 {
   font-family: "Ms Madi", cursive;
-  font-size: 3vw;
+  font-size: 3.5vw;
   color: black;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -174,7 +174,7 @@ h2 a {
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: black;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -187,7 +187,7 @@ h3 {
 }
 .content p {
   margin: 10px 3px 10px 3px;
-  font-size: 1.8vw;
+  font-size: 2vw;
 }
 .content h2 a {
   color: #0080c8;
@@ -202,10 +202,10 @@ footer {
   padding: 5px;
 }
 footer .footerParagraph1 {
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 footer p {
-  font-size: 1vw;
+  font-size: 2vw;
 }
 footer footer img {
   width: 5vw;
