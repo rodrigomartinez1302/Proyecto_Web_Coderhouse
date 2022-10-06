@@ -1,296 +1,274 @@
 /* asi se comenta en ccs */
-
 /* en ccs se habla de selectores no de etiqteas
 selector {
     propiedad:valor;
     }
 */
-
 /*
 no se recomineda usar mas de 2 fuentes en todo el proyecto 
  */
-@import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville&family=Roboto:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville:ital@0;1&family=Ms+Madi&family=Roboto:ital,wght@1,100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville&family=Roboto:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville:ital@0;1&family=Ms+Madi&family=Roboto:ital,wght@1,100&display=swap");
 /*reseteo de propiedades*/
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Baskerville', serif;
-    list-style-type: none;
-    color: black;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "HK Grotesk wf,sans-serif";
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
 }
 
 header {
-    grid-area: header;
+  grid-area: header;
 }
 
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 body {
-    gap: 2px;
-    display: grid;
-    align-content: stretch;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
+  gap: 2px;
+  display: grid;
+  align-content: stretch;
+  grid-template-areas: "header" "main" "footer";
 }
 
 .mainNav {
-    grid-area: mainNav;
+  grid-area: mainNav;
 }
 
 .signNav {
-    grid-area: signNav;
+  grid-area: signNav;
 }
 
 .slogan {
-    grid-area: slogan;
+  grid-area: slogan;
 }
 
 .secondNav {
-    grid-area: secondNav;
+  grid-area: secondNav;
 }
 
 header {
-    z-index: 2;
-    position: sticky;
-    top: 0;
-    border-bottom: 3px solid white;
-    background-image: url('../img/headerBackground.JPG');
-    background-size: cover;
-    background-position: right;
-    height: fit-content;
-    background-repeat: none;
-    font-size: 2.8vw;
-    display: grid;
-    grid-template-areas:
-        "mainNav mainNav signNav"
-        "slogan  slogan slogan"
-        "secondNav secondNav secondNav";
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid white;
+  background-image: url("../img/headerBackground.JPG");
+  background-size: cover;
+  background-position: right;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-repeat: none;
+  font-size: 2.8vw;
+  display: grid;
+  grid-template-areas: "mainNav mainNav signNav" "slogan  slogan slogan" "secondNav secondNav secondNav";
 }
 
 .slogan {
-    color: white;
-    font-family: 'Ms Madi', cursive;
-    margin-left: 40px;
-    font-size: 6.5vw;
+  color: white;
+  font-family: "Ms Madi", cursive;
+  margin-left: 40px;
+  font-size: 6.5vw;
 }
 
 .rowNav {
-    padding: 1.8px;
-    margin: 10px 3px 10px 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+  padding: 1.8px;
+  margin: 10px 3px 10px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .columnNav {
-    margin: 4px;
+  margin: 4px;
 }
 
 .signNav .rowNav {
-    margin: 10px 3px 10px 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+  margin: 10px 3px 10px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .secondNav .rowNav {
-    margin: 10px 3px 10px 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  margin: 10px 3px 10px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 header a {
-    color: white;
-    text-decoration: none;
-    transition: 1.5s;
-    border-bottom: 2.5px solid transparent;
-    height: fit-content;
+  color: white;
+  text-decoration: none;
+  transition: 1.5s;
+  border-bottom: 2.5px solid transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-
 header a:hover {
-    border-color: rgb(238, 89, 230);
-    text-decoration: none;
+  border-color: rgb(238, 89, 230);
+  color: white;
 }
 
 .photoCategories {
-    z-index: 1;
-    margin: 5px 2px 5px 2px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: lightgrey;
+  z-index: 1;
+  margin: 5px 2px 5px 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: lightgrey;
 }
-
 .photoCategories img {
-    width: 23vw;
-    height: 36vw;
+  width: 23vw;
+  height: 36vw;
 }
-
 .photoCategories img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 #aImg6 {
-    display: none;
+  display: none;
 }
 
 #aImg12 {
-    display: none;
+  display: none;
 }
 
 #aImg5 {
-    display: none;
+  display: none;
 }
 
 #aImg11 {
-    display: none;
-}
-
-.content {
-    padding: 5px;
-    background-color: lightgrey;
-    margin: 5px 0px 5px 0px;
-}
-
-.content p {
-    margin: 10px 3px 10px 3px;
+  display: none;
 }
 
 h2 {
-    font-family: 'Ms Madi', cursive;
-    font-size: 3vw;
-    color: black;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  font-family: "Ms Madi", cursive;
+  font-size: 3vw;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
-
 h2 a {
-    font-size: 3vw;
-    font-family: 'Ms Madi', cursive;
-    text-decoration: none;
-    color: black;
-    transition: 1.5s;
-    border-bottom: 2.5px solid green;
-}
-
-.content h2 a:hover {
-    border-color: rgb(238, 89, 230);
-    text-decoration: none;
+  font-family: "Ms Madi", cursive;
+  text-decoration: none;
+  transition: 1.5s;
+  border-bottom: 2.5px solid green;
 }
 
 h3 {
-    font-size: 1.5vw;
-    color: black;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  font-size: 2vw;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.content {
+  padding: 5px;
+  background-color: lightgrey;
+  margin: 5px 0px 5px 0px;
+}
+.content p {
+  margin: 10px 3px 10px 3px;
+  font-size: 1.8vw;
+}
+.content h2 a {
+  color: #0080c8;
+}
+.content h2 a:hover {
+  border-color: rgb(238, 89, 230);
 }
 
 footer {
-
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(25, 74, 7, 0.8) 49%, rgba(0, 0, 0, 0.5) 100%);
-    margin-top: 2px;
-    padding: 5px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(25, 74, 7, 0.8) 49%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 2px;
+  padding: 5px;
 }
-
 footer .footerParagraph1 {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
-
 footer p {
-    font-size: 1vw;
+  font-size: 1vw;
 }
-
-footer img {
-    width: 5vw;
-    height: 5vw;
+footer footer img {
+  width: 5vw;
+  height: 5vw;
 }
 
 .text-center {
-    height: 100vh;
+  height: 100vh;
 }
 
 .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 14px;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  font-family: "Libre Baskerville", serif;
+  font-size: 14px;
 }
-
 .form-signin .sigIn {
-    font-family: 'Ms Madi', cursive;
-    font-size: 80px;
+  font-family: "Ms Madi", cursive;
+  font-size: 80px;
+}
+.form-signin .checkbox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .signButtons {
-    display: flex;
-    gap: 4px;
-}
-
-.form-signin .checkbox {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 12px;
+  display: flex;
+  gap: 4px;
 }
 
 .portfolio {
-    margin: 5px 0px 5px 0px;
-    background-color: lightgrey;
-
+  margin: 5px 0px 5px 0px;
+  background-color: lightgrey;
 }
 
 .portfolioForm {
-    margin: 10px;
+  margin: 10px;
 }
 
-@media (min-width:500px) {
-    header {
-        font-size: 2.3vw;
-    }
-
-    .columnNav {
-        margin: 17px;
-    }
-
-    .photoCategories img {
-        width: 16vw;
-        height: 24vw;
-    }
-
-    #aImg6 {
-        display: unset;
-    }
-
-    #aImg12 {
-        display: unset;
-    }
-
-    #aImg5 {
-        display: unset;
-    }
-
-    #aImg11 {
-        display: unset;
-    }
-}
+@media (min-width: 500px) {
+  header {
+    font-size: 2vw;
+  }
+  .columnNav {
+    margin: 17px;
+  }
+  .photoCategories img {
+    width: 16vw;
+    height: 24vw;
+  }
+  #aImg6 {
+    display: unset;
+  }
+  #aImg12 {
+    display: unset;
+  }
+  #aImg5 {
+    display: unset;
+  }
+  #aImg11 {
+    display: unset;
+  }
+}/*# sourceMappingURL=style.css.map */
