@@ -11,7 +11,7 @@ no se recomineda usar mas de 2 fuentes en todo el proyecto
  */
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville:ital@0;1&family=Ms+Madi&family=Roboto:ital,wght@1,100&display=swap');
-
+@import "mixin";
 /*reseteo de propiedades*/
 html {
     font-size: 62.5%;
@@ -40,6 +40,7 @@ footer {
 
 body {
     gap: 2px;
+    height: 100vh;
     display: grid;
     align-content: stretch;
     grid-template-areas:
@@ -60,10 +61,6 @@ body {
     grid-area: slogan;
 }
 
-.secondNav {
-    grid-area: secondNav;
-}
-
 header {
     z-index: 2;
     position: sticky;
@@ -79,23 +76,20 @@ header {
     grid-template-areas:
         "mainNav mainNav signNav"
         "slogan  slogan slogan"
-        "secondNav secondNav secondNav";
 }
 
 .slogan {
     color: white;
     font-family: 'Ms Madi', cursive;
     margin-left: 40px;
+    margin-bottom: 10px;
     font-size: 6.5vw;
 }
 
 .rowNav {
     padding: 1.8px;
     margin: 10px 3px 10px 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    @include flexible(flex, row, flex-start, wrap)
 }
 
 .columnNav {
@@ -104,19 +98,9 @@ header {
 
 .signNav .rowNav {
     margin: 10px 3px 10px 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    @include flexible(flex, row, flex-end, wrap)
 }
 
-.secondNav .rowNav {
-    margin: 10px 3px 10px 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 header {
     a {
@@ -125,30 +109,27 @@ header {
         transition: 1.5s;
         border-bottom: 2.5px solid transparent;
         height: fit-content;
-    }
 
-    a:hover {
-        border-color: rgb(238, 89, 230);
-        color: white;
+        &:hover {
+            border-color: rgb(238, 89, 230);
+            color: white;
+        }
     }
 }
 
 .photoCategories {
     z-index: 1;
     margin: 5px 2px 5px 2px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexible(flex, row, space-around, wrap);
     background-color: lightgrey;
 
     img {
         width: 23vw;
         height: 36vw;
-    }
 
-    img:hover {
-        opacity: 0.8;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
 
@@ -167,9 +148,10 @@ header {
 #aImg11 {
     display: none;
 }
+
 h2 {
     font-family: 'Ms Madi', cursive;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     color: black;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -186,29 +168,30 @@ h2 {
 h3 {
     font-size: 2.5vw;
     color: black;
+    font-weight: normal;
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
 .content {
     padding: 5px;
     background-color: lightgrey;
     margin: 5px 0px 5px 0px;
 
     p {
-        margin: 10px 3px 10px 3px;
+        margin: 10px 3px 20px 3px;
         font-size: 2vw;
     }
 
     h2 {
         a {
             color: #0080c8;
-        }
 
-        a:hover {
-            border-color: rgb(238, 89, 230);
+            &:hover {
+                border-color: rgb(238, 89, 230);
+            }
         }
     }
-
 }
 
 footer {
@@ -225,9 +208,9 @@ footer {
         font-size: 2vw;
     }
 
-    footer img {
-        width: 5vw;
-        height: 5vw;
+    img {
+        width: 30px;
+        height: 30px;
     }
 
 }
@@ -261,17 +244,29 @@ footer {
     gap: 4px;
 }
 
+.formButtons {
+    display: flex;
+    gap: 4px;
+}
+
 .portfolio {
     margin: 5px 0px 5px 0px;
     background-color: lightgrey;
+    font-size: 2vw;
+
+    p {
+        margin: 10px 3px 10px 3px;
+    }
 
 }
 
 .portfolioForm {
     margin: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
-@media (min-width:500px) {
+@media (min-width:420px) {
     header {
         font-size: 2vw;
     }
@@ -280,9 +275,58 @@ footer {
         margin: 17px;
     }
 
-    .photoCategories img {
-        width: 16vw;
-        height: 24vw;
+    footer {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .photoCategories {
+        img {
+            width: 16vw;
+            height: 24vw;
+        }
+    }
+
+    #aImg6 {
+        display: unset;
+    }
+
+    #aImg12 {
+        display: unset;
+    }
+
+    #aImg5 {
+        display: unset;
+    }
+
+    #aImg11 {
+        display: unset;
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        font-size: 3vw;
+    }
+
+    .columnNav {
+        margin: 17px;
+    }
+
+    footer {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .photoCategories {
+        img {
+            width: 16vw;
+            height: 24vw;
+        }
     }
 
     #aImg6 {
