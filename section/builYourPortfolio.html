@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.ico">
-    <meta name="description"
-        content="Build your portfolio and get rewarded for your shots">
+    <meta name="description" content="Build your portfolio and get rewarded for your shots">
     <title>Portfolio</title>
 </head>
 <header>
@@ -43,38 +42,34 @@
 <body>
     <main>
         <div class="portfolio">
-            <section class="portfolioForm">
-                <h2>Build your Portfolio</h2>
-                <p>Bring your photos a new level. Take advantage of our web platform designed to organize your shots. It
-                    is a tool to create an online photography portfolio. You will take advantage of our frendly user
-                    interface and be more closer to your customers allowing you to level up your work.</p>
-                <form>
-                    <label for="">Date</label><br>
-                    <input type="date"><br><br>
-                    <div class="form-group w-50">
-                        <label for="exampleFormControlTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="5"></textarea>
-                    </div><br>
-                    <label for="">Category</label><br>
-                    <select id="category">
-                        <option value="volvo">Sports</option>
-                        <option value="saab">Nature</option>
-                        <option value="opel">Portrait</option>
-                        <option value="audi">Macro</option>
-                        <option value="audi">Food</option>
-                        <option value="audi">Plants</option>
-                        <option value="audi">Sky</option>
-                    </select><br><br>
-                    <div class="mb-3">
-                        <label for="formFileMultiple" class="form-label">Upload yout photos</label>
-                        <input class="form-control w-50" type="file" id="formFileMultiple" multiple>
-                    </div>
-                    <section class="formButtons">
-                        <a href="../index.html" class="btn btn-success" type="submit">Submit</a>
-                        <a href="../index.html" class="btn btn-success" type="submit">Cancel</a>
-                    </section>
-                </form>
-            </section>
+            <h2>Build your Portfolio</h2>
+            <p>Bring your photos a new level. Take advantage of our web platform designed to organize your shots. It
+                is a tool to create an online photography portfolio. You will take advantage of our frendly user
+                interface and be more closer to your customers allowing you to level up your work.</p>
+            <form class="portfolioForm">
+                <label>Date</label>
+                <input type="date" class="datePicker">
+                <div class="form-group textArea">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="5"></textarea>
+                </div>
+                <label for="">Category</label>
+                <select class="category">
+                    <option value="volvo">Sports</option>
+                    <option value="saab">Nature</option>
+                    <option value="opel">Portrait</option>
+                    <option value="audi">Macro</option>
+                    <option value="audi">Food</option>
+                    <option value="audi">Plants</option>
+                    <option value="audi">Sky</option>
+                </select>
+                <label for="formFileMultiple" class="form-label">Upload yout photos</label>
+                <input class="form-control formElement" type="file" id="formFileMultiple" multiple>
+                <section class="formButtons">
+                    <a href="../index.html" class="btn btn-success" type="submit">Submit</a>
+                    <a href="../index.html" class="btn btn-success" type="submit">Cancel</a>
+                </section>
+            </form>
         </div>
     </main>
     <footer>

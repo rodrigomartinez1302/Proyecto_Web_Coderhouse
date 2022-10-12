@@ -12,6 +12,7 @@ no se recomineda usar mas de 2 fuentes en todo el proyecto
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville:ital@0;1&family=Ms+Madi&family=Roboto:ital,wght@1,100&display=swap');
 @import "mixin";
+
 /*reseteo de propiedades*/
 html {
     font-size: 62.5%;
@@ -69,13 +70,26 @@ header {
     background-image: url('../img/headerBackground.JPG');
     background-size: cover;
     background-position: right;
-    height: fit-content;
     background-repeat: none;
-    font-size: 2.9vw;
+    height: fit-content;
     display: grid;
     grid-template-areas:
         "mainNav mainNav signNav"
-        "slogan  slogan slogan"
+        "slogan  slogan slogan";
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: 1.5s;
+        border-bottom: 2.5px solid transparent;
+        height: fit-content;
+        font-size: 3.6vw;
+
+        &:hover {
+            border-color: rgb(238, 89, 230);
+            color: white;
+        }
+    }
 }
 
 .slogan {
@@ -83,7 +97,7 @@ header {
     font-family: 'Ms Madi', cursive;
     margin-left: 40px;
     margin-bottom: 10px;
-    font-size: 6.5vw;
+    font-size: 8vw;
 }
 
 .rowNav {
@@ -93,7 +107,7 @@ header {
 }
 
 .columnNav {
-    margin: 4px;
+    margin: 3px;
 }
 
 .signNav .rowNav {
@@ -101,21 +115,6 @@ header {
     @include flexible(flex, row, flex-end, wrap)
 }
 
-
-header {
-    a {
-        color: white;
-        text-decoration: none;
-        transition: 1.5s;
-        border-bottom: 2.5px solid transparent;
-        height: fit-content;
-
-        &:hover {
-            border-color: rgb(238, 89, 230);
-            color: white;
-        }
-    }
-}
 
 .photoCategories {
     z-index: 1;
@@ -151,7 +150,7 @@ header {
 
 h2 {
     font-family: 'Ms Madi', cursive;
-    font-size: 4.5vw;
+    font-size: 6vw;
     color: black;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -166,7 +165,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2.5vw;
+    font-size: 4vw;
     color: black;
     font-weight: normal;
     margin-bottom: 5px;
@@ -179,8 +178,8 @@ h3 {
     margin: 5px 0px 5px 0px;
 
     p {
-        margin: 10px 3px 20px 3px;
-        font-size: 2vw;
+        font-size: 3vw;
+        margin-bottom: 10px;
     }
 
     h2 {
@@ -201,11 +200,11 @@ footer {
     padding: 5px;
 
     .footerParagraph1 {
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
 
     p {
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
 
     img {
@@ -244,35 +243,66 @@ footer {
     gap: 4px;
 }
 
-.formButtons {
-    display: flex;
-    gap: 4px;
-}
-
 .portfolio {
     margin: 5px 0px 5px 0px;
     background-color: lightgrey;
-    font-size: 2vw;
-
-    p {
-        margin: 10px 3px 10px 3px;
-    }
-
+    font-size: 3.5vw;
+    padding: 5px;
 }
 
 .portfolioForm {
-    margin: 10px;
-    padding-bottom: 5px;
     padding-top: 5px;
+    @include flexible(flex, column, flex-start, wrap);
+
+    .datePicker {
+        width: 30vw;
+        margin-bottom: 5px;
+    }
+
+    .category {
+        width: 50vw;
+        margin-bottom: 5px;
+    }
+
+    .textArea {
+        width: 50vw;
+        margin-bottom: 5px;
+    }
+
+    .formElement {
+        margin-bottom: 5px;
+        width: 50vw;
+        font-size: 3.5vw;
+    }
+
+    .form-label {
+        margin-bottom: 0px;
+        width: 50vw;
+        font-size: 3.5vw;
+
+    }
+
+    .formButtons {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 5px;
+
+        a {
+            font-size: 3vw;
+        }
+    }
+
 }
 
 @media (min-width:420px) {
     header {
-        font-size: 2vw;
+        a {
+            font-size: 2.5vw;
+        }
     }
 
     .columnNav {
-        margin: 17px;
+        margin: 10px;
     }
 
     footer {
@@ -307,12 +337,9 @@ footer {
 }
 
 @media (min-width:768px) {
-    header {
-        font-size: 3vw;
-    }
 
     .columnNav {
-        margin: 17px;
+        margin: 15px;
     }
 
     footer {

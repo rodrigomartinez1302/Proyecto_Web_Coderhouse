@@ -64,13 +64,26 @@ header {
   background-image: url("../img/headerBackground.JPG");
   background-size: cover;
   background-position: right;
+  background-repeat: none;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-repeat: none;
-  font-size: 2.9vw;
   display: grid;
   grid-template-areas: "mainNav mainNav signNav" "slogan  slogan slogan";
+}
+header a {
+  color: white;
+  text-decoration: none;
+  transition: 1.5s;
+  border-bottom: 2.5px solid transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 3.6vw;
+}
+header a:hover {
+  border-color: rgb(238, 89, 230);
+  color: white;
 }
 
 .slogan {
@@ -78,7 +91,7 @@ header {
   font-family: "Ms Madi", cursive;
   margin-left: 40px;
   margin-bottom: 10px;
-  font-size: 6.5vw;
+  font-size: 8vw;
 }
 
 .rowNav {
@@ -91,7 +104,7 @@ header {
 }
 
 .columnNav {
-  margin: 4px;
+  margin: 3px;
 }
 
 .signNav .rowNav {
@@ -100,20 +113,6 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
-}
-
-header a {
-  color: white;
-  text-decoration: none;
-  transition: 1.5s;
-  border-bottom: 2.5px solid transparent;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-header a:hover {
-  border-color: rgb(238, 89, 230);
-  color: white;
 }
 
 .photoCategories {
@@ -151,7 +150,7 @@ header a:hover {
 
 h2 {
   font-family: "Ms Madi", cursive;
-  font-size: 4.5vw;
+  font-size: 6vw;
   color: black;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -164,7 +163,7 @@ h2 a {
 }
 
 h3 {
-  font-size: 2.5vw;
+  font-size: 4vw;
   color: black;
   font-weight: normal;
   margin-bottom: 5px;
@@ -177,8 +176,8 @@ h3 {
   margin: 5px 0px 5px 0px;
 }
 .content p {
-  margin: 10px 3px 20px 3px;
-  font-size: 2vw;
+  font-size: 3vw;
+  margin-bottom: 10px;
 }
 .content h2 a {
   color: #0080c8;
@@ -193,10 +192,10 @@ footer {
   padding: 5px;
 }
 footer .footerParagraph1 {
-  font-size: 2vw;
+  font-size: 3.5vw;
 }
 footer p {
-  font-size: 2vw;
+  font-size: 3.5vw;
 }
 footer img {
   width: 30px;
@@ -230,32 +229,57 @@ footer img {
   gap: 4px;
 }
 
-.formButtons {
-  display: flex;
-  gap: 4px;
-}
-
 .portfolio {
   margin: 5px 0px 5px 0px;
   background-color: lightgrey;
-  font-size: 2vw;
-}
-.portfolio p {
-  margin: 10px 3px 10px 3px;
+  font-size: 3.5vw;
+  padding: 5px;
 }
 
 .portfolioForm {
-  margin: 10px;
-  padding-bottom: 5px;
   padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.portfolioForm .datePicker {
+  width: 30vw;
+  margin-bottom: 5px;
+}
+.portfolioForm .category {
+  width: 50vw;
+  margin-bottom: 5px;
+}
+.portfolioForm .textArea {
+  width: 50vw;
+  margin-bottom: 5px;
+}
+.portfolioForm .formElement {
+  margin-bottom: 5px;
+  width: 50vw;
+  font-size: 3.5vw;
+}
+.portfolioForm .form-label {
+  margin-bottom: 0px;
+  width: 50vw;
+  font-size: 3.5vw;
+}
+.portfolioForm .formButtons {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+.portfolioForm .formButtons a {
+  font-size: 3vw;
 }
 
 @media (min-width: 420px) {
-  header {
-    font-size: 2vw;
+  header a {
+    font-size: 2.5vw;
   }
   .columnNav {
-    margin: 17px;
+    margin: 10px;
   }
   footer img {
     width: 50px;
@@ -279,11 +303,8 @@ footer img {
   }
 }
 @media (min-width: 768px) {
-  header {
-    font-size: 3vw;
-  }
   .columnNav {
-    margin: 17px;
+    margin: 15px;
   }
   footer img {
     width: 60px;
