@@ -12,6 +12,7 @@ no se recomineda usar mas de 2 fuentes en todo el proyecto
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Libre+Baskerville:ital@0;1&family=Ms+Madi&family=Roboto:ital,wght@1,100&display=swap');
 @import "mixin";
+@import "variables";
 
 /*reseteo de propiedades*/
 html {
@@ -120,7 +121,7 @@ header {
     z-index: 1;
     margin: 5px 2px 5px 2px;
     @include flexible(flex, row, space-around, wrap);
-    background-color: lightgrey;
+    background-color: $backgroundColor;
 
     img {
         width: 23vw;
@@ -174,11 +175,11 @@ h3 {
 
 .content {
     padding: 3vh 5px 3vh 5px;
-    background-color: lightgrey;
+    background-color: $backgroundColor;
     margin: 5px 0px 5px 0px;
 
     p {
-        font-size: 2.5vw;
+        font-size: $fontSize;
         margin-bottom: 5vh;
     }
 
@@ -200,11 +201,11 @@ footer {
     padding: 5px;
 
     .footerParagraph1 {
-        font-size: 3.5vw;
+        font-size: $fontSize;
     }
 
     p {
-        font-size: 3.5vw;
+        font-size: $fontSize;
     }
 
     img {
@@ -245,8 +246,8 @@ footer {
 
 .portfolio {
     padding: 3vh 5px 3vh 5px;
-    background-color: lightgrey;
-    font-size: 2.5vw;
+    background-color: $backgroundColor;
+    font-size: $fontSize;
     padding: 5px;
 
     .portfolioForm {
@@ -254,24 +255,24 @@ footer {
         @include flexible(flex, column, flex-start, wrap);
 
         .datePicker {
-            width: 15vw;
+            width: $widthFormElement;
             margin-bottom: 10px;
         }
 
         .category {
-            width: 50vw;
+            width: $widthFormElement;
             margin-bottom: 10px;
         }
 
         .textArea {
-            width: 50vw;
+            width: $widthFormElement;
             margin-bottom: 10px;
         }
 
         .formElement {
             margin-bottom: 10px;
-            width: 50vw;
-            font-size: 2.5vw;
+            width: $widthFormElement;
+            font-size: $fontSize;
         }
 
         .form-label {
@@ -283,17 +284,15 @@ footer {
         .formButtons {
             display: flex;
             gap: 4px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
 
             a {
-                font-size: 2.5vw;
+                font-size: $fontSize;
             }
         }
 
-        .textarea {
-
-            font-size: 2.5vw;
-
+        textarea {
+            font-size: $fontSize;
         }
 
     }
@@ -310,19 +309,25 @@ footer {
 
     .content {
         padding: 3vh 5px 3vh 5px;
-        background-color: lightgrey;
+        background-color: $backgroundColor;
         margin: 5px 0px 5px 0px;
 
         p {
-            font-size: 2vw;
+            font-size: $fontSize420;
             margin-bottom: 5vh;
+        }
+    }
+    .photoCategories {
+        img {
+            width: 15vw;
+            height: 24vw;
         }
     }
 
     .portfolio {
         padding: 3vh 5px 3vh 5px;
-        background-color: lightgrey;
-        font-size: 2vw;
+        background-color: $backgroundColor;
+        font-size: $fontSize420;
         padding: 5px;
 
         .portfolioForm {
@@ -333,18 +338,17 @@ footer {
                 margin-bottom: 5px;
 
                 a {
-                    font-size: 2vw;
+                    font-size: $fontSize420;
                 }
             }
 
             .formElement {
                 margin-bottom: 10px;
-                width: 50vw;
-                font-size: 2vw;
+                font-size: $fontSize420;
             }
 
-            .textarea {
-                font-size: 2vw;
+            textarea {
+                font-size: $fontSize420;
             }
         }
     }
@@ -360,16 +364,18 @@ footer {
     }
 
     footer {
+
+        .footerParagraph1 {
+            font-size: $fontSize420;
+        }
+
+        p {
+            font-size: $fontSize420;
+        }
+
         img {
             width: 50px;
             height: 50px;
-        }
-    }
-
-    .photoCategories {
-        img {
-            width: 16vw;
-            height: 24vw;
         }
     }
 
@@ -401,19 +407,19 @@ footer {
 
     .content {
         padding: 3vh 5px 3vh 5px;
-        background-color: lightgrey;
+        background-color:$backgroundColor;
         margin: 5px 0px 5px 0px;
 
         p {
-            font-size: 1.5vw;
+            font-size: $fontSize768;
             margin-bottom: 5vh;
         }
     }
 
     .portfolio {
         padding: 3vh 5px 3vh 5px;
-        background-color: lightgrey;
-        font-size: 1.5vw;
+        background-color: $backgroundColor;
+        font-size: $fontSize768;
         padding: 5px;
 
         .portfolioForm {
@@ -424,18 +430,17 @@ footer {
                 margin-bottom: 5px;
 
                 a {
-                    font-size: 1.5vw;
+                    font-size: $fontSize768;
                 }
             }
 
             .formElement {
                 margin-bottom: 10px;
-                width: 50vw;
-                font-size: 1.5vw;
+                font-size: $fontSize768;
             }
 
-            .textarea {
-                font-size: 1.5vw;
+            textarea {
+                font-size: $fontSize768;
             }
         }
     }
@@ -445,6 +450,15 @@ footer {
     }
 
     footer {
+
+        .footerParagraph1 {
+            font-size: $fontSize768;
+        }
+
+        p {
+            font-size: $fontSize768;
+        }
+
         img {
             width: 60px;
             height: 60px;

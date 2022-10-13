@@ -176,7 +176,7 @@ h3 {
   margin: 5px 0px 5px 0px;
 }
 .content p {
-  font-size: 2.5vw;
+  font-size: 4vw;
   margin-bottom: 5vh;
 }
 .content h2 a {
@@ -192,10 +192,10 @@ footer {
   padding: 5px;
 }
 footer .footerParagraph1 {
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 footer p {
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 footer img {
   width: 30px;
@@ -232,7 +232,7 @@ footer img {
 .portfolio {
   padding: 3vh 5px 3vh 5px;
   background-color: lightgrey;
-  font-size: 2.5vw;
+  font-size: 4vw;
   padding: 5px;
 }
 .portfolio .portfolioForm {
@@ -243,7 +243,7 @@ footer img {
   flex-wrap: wrap;
 }
 .portfolio .portfolioForm .datePicker {
-  width: 15vw;
+  width: 50vw;
   margin-bottom: 10px;
 }
 .portfolio .portfolioForm .category {
@@ -257,7 +257,7 @@ footer img {
 .portfolio .portfolioForm .formElement {
   margin-bottom: 10px;
   width: 50vw;
-  font-size: 2.5vw;
+  font-size: 4vw;
 }
 .portfolio .portfolioForm .form-label {
   margin-bottom: 0px;
@@ -266,13 +266,13 @@ footer img {
 .portfolio .portfolioForm .formButtons {
   display: flex;
   gap: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .portfolio .portfolioForm .formButtons a {
-  font-size: 2.5vw;
+  font-size: 4vw;
 }
-.portfolio .portfolioForm .textarea {
-  font-size: 2.5vw;
+.portfolio .portfolioForm textarea {
+  font-size: 4vw;
 }
 
 @media (min-width: 420px) {
@@ -288,13 +288,17 @@ footer img {
     margin: 5px 0px 5px 0px;
   }
   .content p {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 5vh;
+  }
+  .photoCategories img {
+    width: 15vw;
+    height: 24vw;
   }
   .portfolio {
     padding: 3vh 5px 3vh 5px;
     background-color: lightgrey;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 5px;
   }
   .portfolio .portfolioForm .formButtons {
@@ -303,15 +307,14 @@ footer img {
     margin-bottom: 5px;
   }
   .portfolio .portfolioForm .formButtons a {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .portfolio .portfolioForm .formElement {
     margin-bottom: 10px;
-    width: 50vw;
-    font-size: 2vw;
+    font-size: 3vw;
   }
-  .portfolio .portfolioForm .textarea {
-    font-size: 2vw;
+  .portfolio .portfolioForm textarea {
+    font-size: 3vw;
   }
   header a {
     font-size: 2.5vw;
@@ -319,13 +322,15 @@ footer img {
   .columnNav {
     margin: 10px;
   }
+  footer .footerParagraph1 {
+    font-size: 3vw;
+  }
+  footer p {
+    font-size: 3vw;
+  }
   footer img {
     width: 50px;
     height: 50px;
-  }
-  .photoCategories img {
-    width: 16vw;
-    height: 24vw;
   }
   #aImg6 {
     display: unset;
@@ -353,13 +358,13 @@ footer img {
     margin: 5px 0px 5px 0px;
   }
   .content p {
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-bottom: 5vh;
   }
   .portfolio {
     padding: 3vh 5px 3vh 5px;
     background-color: lightgrey;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 5px;
   }
   .portfolio .portfolioForm .formButtons {
@@ -368,18 +373,23 @@ footer img {
     margin-bottom: 5px;
   }
   .portfolio .portfolioForm .formButtons a {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   .portfolio .portfolioForm .formElement {
     margin-bottom: 10px;
-    width: 50vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
-  .portfolio .portfolioForm .textarea {
-    font-size: 1.5vw;
+  .portfolio .portfolioForm textarea {
+    font-size: 2vw;
   }
   .columnNav {
     margin: 15px;
+  }
+  footer .footerParagraph1 {
+    font-size: 2vw;
+  }
+  footer p {
+    font-size: 2vw;
   }
   footer img {
     width: 60px;
