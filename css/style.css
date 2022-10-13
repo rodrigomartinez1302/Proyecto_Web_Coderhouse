@@ -243,7 +243,7 @@ footer img {
   flex-wrap: wrap;
 }
 .portfolio .portfolioForm .datePicker {
-  width: 100px;
+  width: 15vw;
   margin-bottom: 10px;
 }
 .portfolio .portfolioForm .category {
