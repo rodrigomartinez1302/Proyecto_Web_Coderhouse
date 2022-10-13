@@ -171,13 +171,13 @@ h3 {
 }
 
 .content {
-  padding: 5px;
+  padding: 3vh 5px 3vh 5px;
   background-color: lightgrey;
   margin: 5px 0px 5px 0px;
 }
 .content p {
-  font-size: 3vw;
-  margin-bottom: 10px;
+  font-size: 2.5vw;
+  margin-bottom: 5vh;
 }
 .content h2 a {
   color: #0080c8;
@@ -230,51 +230,89 @@ footer img {
 }
 
 .portfolio {
-  margin: 5px 0px 5px 0px;
+  padding: 3vh 5px 3vh 5px;
   background-color: lightgrey;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   padding: 5px;
 }
-
-.portfolioForm {
+.portfolio .portfolioForm {
   padding-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.portfolioForm .datePicker {
-  width: 30vw;
-  margin-bottom: 5px;
+.portfolio .portfolioForm .datePicker {
+  width: 100px;
+  margin-bottom: 10px;
 }
-.portfolioForm .category {
+.portfolio .portfolioForm .category {
   width: 50vw;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
-.portfolioForm .textArea {
+.portfolio .portfolioForm .textArea {
   width: 50vw;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
-.portfolioForm .formElement {
-  margin-bottom: 5px;
+.portfolio .portfolioForm .formElement {
+  margin-bottom: 10px;
   width: 50vw;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
 }
-.portfolioForm .form-label {
+.portfolio .portfolioForm .form-label {
   margin-bottom: 0px;
   width: 50vw;
-  font-size: 3.5vw;
 }
-.portfolioForm .formButtons {
+.portfolio .portfolioForm .formButtons {
   display: flex;
   gap: 4px;
   margin-bottom: 5px;
 }
-.portfolioForm .formButtons a {
-  font-size: 3vw;
+.portfolio .portfolioForm .formButtons a {
+  font-size: 2.5vw;
+}
+.portfolio .portfolioForm .textarea {
+  font-size: 2.5vw;
 }
 
 @media (min-width: 420px) {
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 3.5vw;
+  }
+  .content {
+    padding: 3vh 5px 3vh 5px;
+    background-color: lightgrey;
+    margin: 5px 0px 5px 0px;
+  }
+  .content p {
+    font-size: 2vw;
+    margin-bottom: 5vh;
+  }
+  .portfolio {
+    padding: 3vh 5px 3vh 5px;
+    background-color: lightgrey;
+    font-size: 2vw;
+    padding: 5px;
+  }
+  .portfolio .portfolioForm .formButtons {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 5px;
+  }
+  .portfolio .portfolioForm .formButtons a {
+    font-size: 2vw;
+  }
+  .portfolio .portfolioForm .formElement {
+    margin-bottom: 10px;
+    width: 50vw;
+    font-size: 2vw;
+  }
+  .portfolio .portfolioForm .textarea {
+    font-size: 2vw;
+  }
   header a {
     font-size: 2.5vw;
   }
@@ -303,6 +341,43 @@ footer img {
   }
 }
 @media (min-width: 768px) {
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  .content {
+    padding: 3vh 5px 3vh 5px;
+    background-color: lightgrey;
+    margin: 5px 0px 5px 0px;
+  }
+  .content p {
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+  }
+  .portfolio {
+    padding: 3vh 5px 3vh 5px;
+    background-color: lightgrey;
+    font-size: 1.5vw;
+    padding: 5px;
+  }
+  .portfolio .portfolioForm .formButtons {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 5px;
+  }
+  .portfolio .portfolioForm .formButtons a {
+    font-size: 1.5vw;
+  }
+  .portfolio .portfolioForm .formElement {
+    margin-bottom: 10px;
+    width: 50vw;
+    font-size: 1.5vw;
+  }
+  .portfolio .portfolioForm .textarea {
+    font-size: 1.5vw;
+  }
   .columnNav {
     margin: 15px;
   }
