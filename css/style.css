@@ -186,22 +186,6 @@ h3 {
   border-color: rgb(238, 89, 230);
 }
 
-footer {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(25, 74, 7, 0.8) 49%, rgba(0, 0, 0, 0.5) 100%);
-  margin-top: 2px;
-  padding: 5px;
-}
-footer .footerParagraph1 {
-  font-size: 4vw;
-}
-footer p {
-  font-size: 4vw;
-}
-footer img {
-  width: 30px;
-  height: 30px;
-}
-
 .text-center {
   height: 100vh;
 }
@@ -275,7 +259,23 @@ footer img {
   font-size: 4vw;
 }
 
+footer .socialNetworks {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(25, 74, 7, 0.8) 49%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 2px;
+  padding: 5px;
+}
+footer .socialNetworks p {
+  font-size: 4vw;
+}
+footer .socialNetworks img {
+  width: 30px;
+  height: 30px;
+}
+
 @media (min-width: 420px) {
+  header a {
+    font-size: 2.5vw;
+  }
   h2 {
     font-size: 5vw;
   }
@@ -316,19 +316,13 @@ footer img {
   .portfolio .portfolioForm textarea {
     font-size: 3vw;
   }
-  header a {
-    font-size: 2.5vw;
-  }
   .columnNav {
     margin: 10px;
   }
-  footer .footerParagraph1 {
+  footer .socialNetworks p {
     font-size: 3vw;
   }
-  footer p {
-    font-size: 3vw;
-  }
-  footer img {
+  footer .socialNetworks img {
     width: 50px;
     height: 50px;
   }
@@ -385,13 +379,10 @@ footer img {
   .columnNav {
     margin: 15px;
   }
-  footer .footerParagraph1 {
+  footer .socialNetworks p {
     font-size: 2vw;
   }
-  footer p {
-    font-size: 2vw;
-  }
-  footer img {
+  footer .socialNetworks img {
     width: 60px;
     height: 60px;
   }
